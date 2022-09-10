@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Product Landing Example</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!--Styles-->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    
+    <!--Icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  </head>
+  <body>
+    <header id="header">
+      <!--#header-img will be the main logo for the product-->
+      <section id="left-section" class="header-section">
+        <img id="header-img" src="https://cdn-icons-png.flaticon.com/512/1041/1041985.png" />
+        <h1 id="product-name">SUL1T PRINT</h1>
+      </section>
+      <section id="right-section" class="header-section">
+        <nav id="nav-bar">
+          <ul>
+            <li class="navigations"><a href="#features-space" class="nav-link"><h2>Features</h2></a></li>
+            <li class="navigations"><a href="#how-it-works-space" class="nav-link"><h2>How it works</h2></a></li>
+            <li class="navigations"><a href="#pricing-space" class="nav-link"><h2>Pricing</h2></a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main id="main">
+      <section id="get-started" class="section">
+        <h2 id="product-description">Product Description</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input id="email" name="email" type="email" placeholder="Enter your email address" required>
+          <input id="submit" type="submit" value="Get Started">
+        </form>
+      </section>
+      <div id="features-space" class="space"></div>
+      <section id="features" class="section">
+        <div class="feature">
+          <img class="feature-logo" src="https://cdn-icons-png.flaticon.com/512/925/925748.png" >
+          <div class="feature-title-descript">
+            <h1 class="feature-title">Worth it</h1>
+            <p class="feature-description">Worth the money you pay for!</p>
+          </div>
+        </div>
+        <div class="feature">
+          <img class="feature-logo" src="https://cdn-icons-png.flaticon.com/512/3002/3002389.png" >
+          <div class="feature-title-descript">
+            <h1 class="feature-title">Quality Assurance</h1>
+            <p class="feature-description">Inexpensive but quality assured.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <img class="feature-logo" src="https://cdn-icons-png.flaticon.com/512/709/709790.png" >
+          <div class="feature-title-descript">
+            <h1 class="feature-title">Fast Delivery</h1>
+            <p class="feature-description">Delivered the same day or two as the day you request.</p>
+          </div>
+        </div>
+      </section>
+      
+      <div id="how-it-works-space" class="space"></div>
+      <section id="how-it-works" class="section">  
+        <iframe id="video" width="320" height="240" controls
+          source src="https://www.youtube.com/embed/VoKzpIagl1o" type="video">
+          Your browser does not support the video tag.
+      </iframe>
+      </section>
+
+      <div id="pricing-space" class="space"></div>
+      <section id="pricing" class="section">
+        <div class="bundle">
+          <h4 class="bundle-name">Bundle 1</h4>
+          <h3 class="bundle-price">P1000</h3>
+          <p class="bundle-description">Lorem-ipsum</p>
+          <p class="bundle-description">Lorem-ipsum</p>
+          <p class="bundle-description">Lorem-ipsum</p>
+          <p class="bundle-description">Lorem-ipsum</p>
+          <button class="select-button">Select</button>
+        </div>
+        <div class="bundle">
+          <h4 class="bundle-name">Bundle 2</h4>
+          <h3 class="bundle-price">P2500</h3>
+          <p class="bundle-description">Lorem-ipsum</p>
+          <p class="bundle-description">Lorem-ipsum</p>
+          <p class="bundle-description">Lorem-ipsum</p>
+          <p class="bundle-description">Lorem-ipsum</p>
+          <button class="select-button">Select</button>
+        </div>
+        <div class="bundle">
+          <h4 class="bundle-name">Bundle 3</h4>
+          <h3 class="bundle-price">P5000</h3>
+          <p class="bundle-description">Lorem-ipsum</p>
+          <p class="bundle-description">Lorem-ipsum</p>
+          <p class="bundle-description">Lorem-ipsum</p>
+          <p class="bundle-description">Lorem-ipsum</p>
+          <button class="select-button">Select</button>
+        </div>
+      </section>
+      
+    </main>
+    <footer id="footer">
+      <div id="footer-infos">
+        <p class="footer-info">Privacy</p>
+        <p class="footer-info">Terms</p>
+        <p class="footer-info">Contacts</p>
+      </div>
+      <p id="copyright">Copyright 2022, Original Printing</p>
+    </footer>
+  </body>
+</html>

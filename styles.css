@@ -1,0 +1,294 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: linen;
+  padding: 12vmin 0 0;
+  font-family: 'Poppins', sans-serif;
+}
+#header {
+  background-color: darkslateblue;
+  color: rgb(22, 220, 95);
+  width: 100%;
+  height: 12vmin;
+  padding: 5px 20px;
+  white-space: nowrap;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/*Sections within the header*/
+#header-img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.header-section {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  column-gap: 10px;
+}
+h1#product-name {
+  font-size: 25px;
+}
+#right-section {
+  justify-content: end;
+
+}
+.navigations {
+  list-style-type: none;
+  font-size: 1.3rem;
+}
+.nav-link {
+  color:rgb(22, 220, 95);
+  text-decoration: none;
+  width: 80px;
+}
+.navigations h2{
+  border-radius: 3px;
+  padding: 5px 10px;
+  transition: background-color 0.15s, color 0.15s;
+}
+.navigations h2:hover {
+  background-color: rgb(22, 220, 95);
+  color: darkslateblue;
+}
+ul {
+  display: flex;
+  align-items: center;
+  column-gap: 3vmin;
+}
+
+#main {
+  display: grid;
+  grid-template-columns: minmax(20px, 1fr) minmax(min-content, 90rem) minmax(20px, 1fr);
+}
+.section {
+  grid-column: 2;
+}
+/*get-started - top section / not the button */
+#get-started {
+  margin: 0 auto;
+  text-align: center;  
+}
+#product-description {
+  margin: 30px auto 15px;
+  font-size: 3.4rem;
+}
+#email {
+  padding: 10px;
+  width: 250px;
+}
+#submit {
+  background-color: darkslateblue;
+  color:rgb(22, 220, 95);
+  font-size: 1.8rem;
+  border: none;
+  padding: 8px 15px;
+  display: grid;
+  grid-column: 1 / -1;
+  margin: 15px auto 0;
+  font-weight: 700;
+  transition: background-color 0.15s, color 0.15s;
+}
+#submit:hover {
+  background-color: rgb(22, 220, 95);
+  color: rgb(55, 46, 109);
+}
+
+/*Features section*/
+.space {
+  grid-column: 2;
+  height: 60px;
+  width: 100%;
+}
+.feature {
+  display: flex;
+  column-gap: 50px;
+  align-items: center;
+  margin: 30px 0;
+}
+.feature-logo {
+  width: 60px;
+  height: 60px;
+  float: left;
+}
+.feature-title {
+  font-size: 25px;
+}
+.feature-description {
+  font-size: 18px;
+  white-space: wrap !important;
+}
+.feature:last-of-type {
+  margin-bottom: 0;
+}
+
+/*how it works section*/
+#how-it-works {
+  margin: auto;
+}
+#video {
+  margin: 20px auto 0;
+  width: 550px;
+  height: 350px;
+  border: 1px solid rgb(22, 220, 95);
+
+}
+
+/*Pricing section*/
+#pricing {
+  margin: 30px auto 100px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.bundle {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 1px solid rgb(8, 93, 39);
+  flex: 1;
+  margin: 0 15px;
+}
+.bundle-name {
+  width: 100%;
+  font-weight: 600;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 2rem;
+  background-color: darkslateblue;
+  color:rgb(22, 220, 95)
+}
+.bundle-price {
+  font-size: 20px;
+  margin: 20px 0;
+}
+.bundle-description {
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+.select-button {
+  background-color: darkslateblue;
+  color: rgb(22, 220, 95);
+  border: none;
+  padding: 8px 20px;
+  font-size: 16px;
+  margin: 20px 0;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s, color 0.2s;
+}
+.select-button:hover {
+  background-color: rgb(22, 220, 95);
+  color: darkslateblue;
+}
+/*Footer - section*/
+#footer {
+  background-color: darkslateblue;
+  color:rgb(230, 234, 232);
+  display: grid;
+  grid-template-rows: 2;
+  justify-content: end;
+  position: relative;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  left: 0;
+  padding: 10px 20px;
+}
+#footer-infos {
+  display: flex;
+  column-gap: 15px;
+  justify-content: end;
+}
+.footer-info {
+  font-size: 2.5vmin;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.footer-info:hover {
+  color: rgb(22, 220, 95);
+}
+#copyright {
+  font-size: 2.3vmin;
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  #header{
+    position: fixed;
+    padding: 10px 0 5px;
+    height: 150px;
+    grid-template-columns: 1fr;
+  }
+  body {
+    padding: 150px 0 0;
+  }
+  .header-section {
+    text-align: center;
+    justify-content: center !important;
+  }
+  #left-section {
+    margin-left: -30px;
+  }
+  #product-name {
+    font-size: 3rem;
+  }
+  .navigations {
+    font-size: 1.2rem;
+    margin: 3px 0;
+  }
+  .navigations h2{
+    padding: 0 5px;
+  }
+  ul {
+    display: block;
+    margin: 8px 0;
+    padding: 0;
+  }
+  .space {
+    height: 0;
+  }
+  #submit {
+    margin-bottom: 60px;
+  }
+  .feature-logo {
+    width: 40px;
+    height: 40px;
+  }
+  .feature-title {
+    font-size: 2.3rem;
+  }
+  .feature-description {
+    font-size: 15px;
+  }
+  .section {
+    margin-bottom: 40px;
+  }
+  #video {
+    width: 400px;
+    height: 250px;
+  }
+  #pricing {
+    margin-top: 70px;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .bundle {
+    margin: auto;
+    width: 260px;
+  }
+}
